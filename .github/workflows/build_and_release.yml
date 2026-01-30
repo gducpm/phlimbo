@@ -26,7 +26,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build Release Bundle (AAB)
-        run: ./gradlew bundleRelease
+        run: ./gradlew assembleRelease
         env:
           SIGNING_KEY_STORE_BASE64: ${{ secrets.SIGNING_KEY_STORE_BASE64 }}
           SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
